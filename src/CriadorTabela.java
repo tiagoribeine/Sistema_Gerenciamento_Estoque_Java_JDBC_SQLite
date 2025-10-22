@@ -8,7 +8,7 @@ public class CriadorTabela {
              Statement stmt = conexao.createStatement()) {
 
             // Definindo o comando SQL para criar a tabela
-            String comandoSql = "CREATE TABLE produtos (" +
+            String comandoSql = "CREATE TABLE IF NOT EXISTS produtos (" +
                     "id_produto INTEGER PRIMARY KEY," +
                     "nome_produto TEXT NOT NULL," +
                     "quantidade INTEGER," +
