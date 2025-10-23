@@ -90,12 +90,12 @@ public class ProdutoDAO {
     }
 
     // Metodo para listar todos os produtos do banco de dados
-    public List<Produto> listarTodos(){
+    public List<Produto> listarTodos() {
         List<Produto> produtos = new ArrayList<>();
         String sql = "SELECT * FROM produtos";
         try (PreparedStatement stmt = CONEXAO_DB.prepareStatement(sql);
              ResultSet rs = stmt.executeQuery()) {
-            while (rs.next()) { //Enquanto houver resultado dentro de rs o loop será válido
+            while (rs.next()) {
                 Produto produto = new Produto();
                 produto.setId(rs.getInt("id_produto"));
                 produto.setNome(rs.getString("nome_produto"));
@@ -104,8 +104,7 @@ public class ProdutoDAO {
                 produto.setStatus(rs.getString("status"));
                 produtos.add(produto);
             }
-        }
-        catch(SQLException e){
+        } catch (SQLException e) {
             System.err.println("Erro ao listar produtos: " + e.getMessage());
         }
         return produtos;
