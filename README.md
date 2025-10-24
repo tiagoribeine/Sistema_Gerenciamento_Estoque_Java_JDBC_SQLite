@@ -12,7 +12,7 @@ Este projeto é um sistema completo de gerenciamento de produtos com interface g
 
 <h3> Tela principal </h3>
 
-![img.png](img.png)
+![img_1.png](assets/img/img_1.png)
 
 <h3> Atualizando registro de "Playstation 5" para "Xbox Series S" com o botão atualizar </h3>
 
