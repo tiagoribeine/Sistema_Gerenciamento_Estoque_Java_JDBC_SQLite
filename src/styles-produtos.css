@@ -1,0 +1,267 @@
+/* styles-produtos.css */
+
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);
+}
+
+/* Container principal */
+.vbox {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0, 0, 5);
+    -fx-padding: 20px;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1px;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-effect: none;
+}
+
+/* Campos de texto */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2d3748;
+    -fx-prompt-text-fill: #a0aec0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 4, 0, 0, 2);
+}
+
+.text-field:focused {
+    -fx-border-color: #667eea;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.3), 8, 0, 0, 3);
+    -fx-background-color: #f8fafc;
+}
+
+/* ComboBox */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 4, 0, 0, 2);
+}
+
+.combo-box:focused {
+    -fx-border-color: #667eea;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.3), 8, 0, 0, 3);
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #2d3748;
+}
+
+.combo-box .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+/* Botões com gradiente */
+.button {
+    -fx-background-color: linear-gradient(to right, #667eea 0%, #764ba2 100%);
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-size: 14px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.4), 10, 0, 0, 3);
+    -fx-border-width: 0;
+    -fx-transition: all 0.3s;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #764ba2 0%, #667eea 100%);
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.6), 15, 0, 0, 5);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(102, 126, 234, 0.3), 5, 0, 0, 2);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Botão Adicionar - Verde */
+.button:contains("Adicionar") {
+    -fx-background-color: linear-gradient(to right, #48bb78 0%, #38a169 100%);
+    -fx-effect: dropshadow(gaussian, rgba(72, 187, 120, 0.4), 10, 0, 0, 3);
+}
+
+.button:contains("Adicionar"):hover {
+    -fx-background-color: linear-gradient(to right, #38a169 0%, #48bb78 100%);
+}
+
+/* Botão Atualizar - Azul */
+.button:contains("Atualizar") {
+    -fx-background-color: linear-gradient(to right, #4299e1 0%, #3182ce 100%);
+    -fx-effect: dropshadow(gaussian, rgba(66, 153, 225, 0.4), 10, 0, 0, 3);
+}
+
+.button:contains("Atualizar"):hover {
+    -fx-background-color: linear-gradient(to right, #3182ce 0%, #4299e1 100%);
+}
+
+/* Botão Excluir - Vermelho */
+.button:contains("Excluir") {
+    -fx-background-color: linear-gradient(to right, #f56565 0%, #e53e3e 100%);
+    -fx-effect: dropshadow(gaussian, rgba(245, 101, 101, 0.4), 10, 0, 0, 3);
+}
+
+.button:contains("Excluir"):hover {
+    -fx-background-color: linear-gradient(to right, #e53e3e 0%, #f56565 100%);
+}
+
+/* Botão Limpar - Cinza */
+.button:contains("Limpar") {
+    -fx-background-color: linear-gradient(to right, #a0aec0 0%, #718096 100%);
+    -fx-effect: dropshadow(gaussian, rgba(160, 174, 192, 0.4), 10, 0, 0, 3);
+}
+
+.button:contains("Limpar"):hover {
+    -fx-background-color: linear-gradient(to right, #718096 0%, #a0aec0 100%);
+}
+
+/* TABELA */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 15, 0, 0, 5);
+}
+
+/* Cabeçalho da tabela */
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #4c51bf 0%, #667eea 100%);
+    -fx-border-color: #434190;
+    -fx-border-width: 0 1px 0 0;
+    -fx-padding: 12px 8px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1);
+}
+
+/* Linhas da tabela */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: #f7fafc;
+    -fx-border-width: 0 0 1px 0;
+    -fx-padding: 8px;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f7fafc;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: linear-gradient(to right, #bee3f8 0%, #90cdf4 100%);
+    -fx-text-fill: #2d3748;
+    -fx-background-insets: 0;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #edf2f7;
+}
+
+/* Células da tabela */
+.table-cell {
+    -fx-text-fill: #2d3748;
+    -fx-font-size: 13px;
+    -fx-border-color: transparent;
+    -fx-padding: 8px;
+    -fx-alignment: CENTER;
+}
+
+/* Scrollbar customizada */
+.table-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar:vertical .track {
+    -fx-background-color: #f1f5f9;
+    -fx-border-color: transparent;
+    -fx-background-radius: 8px;
+}
+
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to bottom, #cbd5e0 0%, #a0aec0 100%);
+    -fx-background-radius: 8px;
+}
+
+.table-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: linear-gradient(to bottom, #a0aec0 0%, #718096 100%);
+}
+
+/* Container dos botões */
+.hbox:has(.button) {
+    -fx-alignment: center;
+    -fx-spacing: 15;
+    -fx-padding: 10px 0 0 0;
+}
+
+/* Containers dos campos */
+.hbox {
+    -fx-alignment: center-left;
+    -fx-spacing: 10;
+}
+
+/* Status com badges coloridos */
+.table-cell:contains("Estoque Normal") {
+    -fx-text-fill: #38a169;
+    -fx-font-weight: bold;
+    -fx-background-color: #f0fff4;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+.table-cell:contains("Estoque Baixo") {
+    -fx-text-fill: #e53e3e;
+    -fx-font-weight: bold;
+    -fx-background-color: #fff5f5;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+/* Efeito de foco geral */
+*:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* Animação sutil para a tabela */
+.table-view {
+    -fx-transition: all 0.3s ease;
+}
