@@ -12,11 +12,11 @@ Este projeto é um sistema completo de gerenciamento de produtos com interface g
 
 <h3> Tela principal </h3>
 
-![img_1.png](assets/img/img_1.png)
+![Tela Principal](./assets/img/img_1.png)
 
 <h3> Atualizando registro de "Playstation 5" para "Xbox Series S" com o botão atualizar </h3>
 
-![img_2.png](assets/img/img_2.png)
+![Atualizando Produto](./assets/img/img_2.png)
 
 <h2> Características Principais </h2>
 
@@ -155,7 +155,7 @@ Esse projeto foi criado no Intellij utilizando VM Options. Abaixo demonstrarei c
 
 Selecione "Edit Configurations..."
 <br>
-![img.png](assets/img/img.png)
+![Configuração IntelliJ](./assets/img/img.png)
 <br>
 
 <li> Criar Nova Configuraçã: Clique no + (Adicionar) no canto superior esquerdo. Selecione Application e preencha os Campos:</li>
