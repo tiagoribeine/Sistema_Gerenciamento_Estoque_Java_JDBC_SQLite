@@ -17,6 +17,7 @@ Este projeto é um sistema completo de gerenciamento de produtos com interface g
 <h3> Atualizando registro de "Playstation 5" para "Xbox Series S" com o botão atualizar </h3>
 
 ![img_2.png](assets/img/img_2.png)
+
 <h2> Características Principais </h2>
 
 <ul>
@@ -136,7 +137,7 @@ java --module-path <span style="color: #e74c3c; font-weight: bold;">[SEU_CAMINHO
 </code></pre>
 
 <div style="border: 1px solid #e9ecef; padding: 15px; border-radius: 5px; margin: 10px 0;">
-<strong>🎯 Onde:</strong>
+<strong> Onde:</strong>
 <ul>
 <li><code>[SEU_CAMINHO_JAVAFX_SDK]</code> → Exemplo: <code>C:\Java\javafx-sdk-22.0.1</code></li>
 </ul>
@@ -168,7 +169,7 @@ Working directory: <span style="color: #e74c3c; font-weight: bold;">[SEU_CAMINHO
 VM Options: -cp "out/production/ProjetoJavaJDBC;SQLite Files/sqlite-jdbc-3.46.0.0.jar;SQLite Files/slf4j-api-1.7.13.jar;SQLite Files/slf4j-simple-1.7.13.jar"</code></pre>
 
 <div style="border: 1px solid #e9ecef; padding: 15px; border-radius: 5px; margin: 10px 0;">
-<strong>🎯 Onde:</strong>
+<strong> Onde:</strong>
 <ul>
 <li><code>[SEU_CAMINHO_DO_PROJETO]</code> → Exemplo: <code>C:\Users\seu_usuario\IdeaProjects\ProjetoJavaJDBC</code></li>
 </ul>
